@@ -4,15 +4,15 @@
 
 class Logger {
 
-    // Create a single instance
+    // Creating a single instance of the Logger class and making it private to prevent direct access
     private static Logger instance;
 
-    // Private constructor prevents object creation from outside
+    // Private constructor prevents object creation from outside the class and ensures that only one instance can be created
     private Logger() {
         System.out.println("Logger Instance Created");
     }
 
-    // Method to get the single instance
+    // Method to get the single instance of the Logger class. If the instance does not exist, it creates one; otherwise, it returns the existing instance.
     public static Logger getInstance() {
         if (instance == null) {
             instance = new Logger();
