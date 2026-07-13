@@ -1,3 +1,7 @@
+
+//Exercise 2: Factory Method Pattern
+
+
 interface Notification {
     void notifyUser();
 }
